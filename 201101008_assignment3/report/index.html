@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>ITWS2-ASSIGNMENT 3</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
+<meta name="title" content="ITWS2-ASSIGNMENT 3"/>
+<meta name="generator" content="Org-mode"/>
+<meta name="generated" content="2012-03-05 17:18:52 IST"/>
+<meta name="author" content="shubham.sangal"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  html { font-family: Times, serif; font-size: 12pt; }
+  .title  { text-align: center; }
+  .todo   { color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #add8e6; font-weight:normal }
+  .target { }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  {margin-left:auto; margin-right:0px;  text-align:right;}
+  .left   {margin-left:0px;  margin-right:auto; text-align:left;}
+  .center {margin-left:auto; margin-right:auto; text-align:center;}
+  p.verse { margin-left: 3% }
+  pre {
+	border: 1pt solid #AEBDCC;
+	background-color: #F3F5F7;
+	padding: 5pt;
+	font-family: courier, monospace;
+        font-size: 90%;
+        overflow:auto;
+  }
+  table { border-collapse: collapse; }
+  td, th { vertical-align: top;  }
+  th.right  { text-align:center;  }
+  th.left   { text-align:center;   }
+  th.center { text-align:center; }
+  td.right  { text-align:right;  }
+  td.left   { text-align:left;   }
+  td.center { text-align:center; }
+  dt { font-weight: bold; }
+  div.figure { padding: 0.5em; }
+  div.figure p { text-align: center; }
+  div.inlinetask {
+    padding:10px;
+    border:2px solid gray;
+    margin:10px;
+    background: #ffffcc;
+  }
+  textarea { overflow-x: auto; }
+  .linenr { font-size:smaller }
+  .code-highlighted {background-color:#ffff00;}
+  .org-info-js_info-navigation { border-style:none; }
+  #org-info-js_console-label { font-size:10px; font-weight:bold;
+                               white-space:nowrap; }
+  .org-info-js_search-highlight {background-color:#ffff00; color:#000000;
+                                 font-weight:bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+
+</head>
+<body>
+
+<div id="preamble">
+
+</div>
+
+<div id="content">
+<h1 class="title">ITWS2-ASSIGNMENT 3</h1>
+
+<p><b>ASSIGNMENT ON: PYTHON-BASIC</b>
+</p>
+<p>
+<b>NAME-SHUBHAM SANGAL</b>
+</p>
+<p>
+<b>ROLL-201101008</b>
+</p>
+
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1 QUESTION-WISE REPORT</a>
+<ul>
+<li><a href="#sec-1-1">1.1 PROBLEM 1</a></li>
+<li><a href="#sec-1-2">1.2 PROBLEM 2</a></li>
+<li><a href="#sec-1-3">1.3 PROBLEM 3</a></li>
+<li><a href="#sec-1-4">1.4 PROBLEM 4</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2 links</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> QUESTION-WISE REPORT</h2>
+<div class="outline-text-2" id="text-1">
+
+
+</div>
+
+<div id="outline-container-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> PROBLEM 1</h3>
+<div class="outline-text-3" id="text-1-1">
+
+<p>   In this problem , I have first read number of rows and columns of first matrix
+and then read elements of it row by row.Similarly for the second matrix and
+then multiplied them without using for loop using <span style="text-decoration:underline;">map</span> and <span style="text-decoration:underline;">reduce</span> and appended 
+final obtained matrix in a list and printed the list accordingly in matrix format
+using the function <span style="text-decoration:underline;">pr</span> and  the map function. The <span style="text-decoration:underline;">pr</span> function prints the
+element of list with a newline if it is last element of a row else it is 
+printing that element with a space only.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> PROBLEM 2</h3>
+<div class="outline-text-3" id="text-1-2">
+
+<p>   In this problem , I used <span style="text-decoration:underline;">os</span> library.  <span style="text-decoration:underline;">os.walk</span> module is used to go inside
+the given directory recursively.Variable <span style="text-decoration:underline;">si</span> is used to calculate the size of
+folder. <span style="text-decoration:underline;">filename</span> will give names of file and now using <span style="text-decoration:underline;">os.join</span> we concatenate
+its path with the path of root and use <span style="text-decoration:underline;">getsize</span> to calculate its size and opened
+it to read its contents and appended them to other file.Similarly is for dir.In 
+the last,we divided the sizes by 1024*1024 to get size in MB.a will give me the
+size of final file in which appending is done and si will give me the size of
+the directory. 
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> PROBLEM 3</h3>
+<div class="outline-text-3" id="text-1-3">
+
+<p>   In this problem , I appended the given <span style="text-decoration:underline;">csv</span> file to a list and then made 2
+new list out of it. <span style="text-decoration:underline;">li2</span> stores first column and <span style="text-decoration:underline;">li1</span> stores second column.Now using
+reduce and filter I calculated the sum of elements of li1 which are greater than 
+the given number and using reduce calculated the sum of all elements of li2 and
+printed them.
+</p>
+</div>
+
+</div>
+
+<div id="outline-container-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> PROBLEM 4</h3>
+<div class="outline-text-3" id="text-1-4">
+
+<p>   In this problem, the function <span style="text-decoration:underline;">checkpat</span> will return all the patterns which contains
+the alphabets given by us in "word to be checked". <span style="text-decoration:underline;">dic</span> will be like  the dictionary.
+ <span style="text-decoration:underline;">level1</span> function return us the word after either deleting a
+letter from the given word or inserting a new letter or swapping positions of
+2 letters or replacing a letter with other letter.The function <span style="text-decoration:underline;">yes(w)</span> will 
+check whether the word is in dictionary or not. <span style="text-decoration:underline;">level2(w)</span> will make 2 level
+of change to the given word. and similarly <span style="text-decoration:underline;">level3(w)</span> will make 3 level change.
+Now finally in <span style="text-decoration:underline;">check(w)</span> will print the requisite message if the given word 
+is in dictionary else it will give 5 nearest word of the given word.
+</p>
+</div>
+</div>
+
+</div>
+
+<div id="outline-container-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> links</h2>
+<div class="outline-text-2" id="text-2">
+
+<p><a href="../problem1/problem1.py">problem1</a>
+</p>
+
+
+<pre class="example">INPUT
+[shubham.sangal@Shubham problem1]$ python problem1.py /home/shubham.sangal/python/t2
+input file t2 resembles:
+4 3
+14 9 3
+2 11 15
+0 12 17
+5 2 3
+3 2
+12 25
+9 10
+8 5
+OUTPUT
+273 455
+243 235
+244 205
+102 160
+INPUT
+3 3
+1 2 3
+4 5 6
+7 8 9
+3 2
+1 4
+2 7
+3 12 
+OUTPUT
+14 54
+32 123
+50 192
+</pre>
+
+
+<p>
+<a href="../problem2/problem2.py">problem2</a>
+</p>
+
+
+<pre class="example">INPUT
+[shubham.sangal@Shubham problem2]$ python problem2.py /home/shubham.sangal/test/ /home/shubham.sangal/m.txt
+OUTPUT
+Size of /home/shubham.sangal/test/ : 0.013MB
+Size of /home/shubham.sangal/m.txt : 0.009MB
+</pre>
+
+
+<p>
+<a href="../problem3/problem3.py">problem3</a>
+</p>
+
+
+<pre class="example">INPUT
+[shubham.sangal@Shubham problem3]$ python problem3.py sample.csv 60
+OUTPUT
+180
+420
+</pre>
+
+
+<p>
+<a href="../problem4/problem4.py">problem4</a>
+</p>
+
+
+<pre class="example">INPUT
+[shubham.sangal@Shubham problem4]$ python problem4.py itws2
+OUTPUT
+The word is incorrectly spelt . The nearest options are :
+it's
+its
+Ian
+Ira's
+iota's
+</pre>
+
+</div>
+</div>
+</div>
+
+<div id="postamble">
+<p class="date">Date: 2012-03-05 17:18:52 IST</p>
+<p class="author">Author: shubham.sangal</p>
+<p class="creator">Org version 7.8.03 with Emacs version 23</p>
+<a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
+
+</div>
+</body>
+</html>

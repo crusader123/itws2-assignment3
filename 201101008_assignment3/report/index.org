@@ -1,0 +1,111 @@
+#+TITLE:ITWS2-ASSIGNMENT 3
+*ASSIGNMENT ON: PYTHON-BASIC*
+
+*NAME-SHUBHAM SANGAL*
+
+*ROLL-201101008*
+
+
+* QUESTION-WISE REPORT
+** PROBLEM 1
+   In this problem , I have first read number of rows and columns of first matrix
+and then read elements of it row by row.Similarly for the second matrix and
+then multiplied them without using for loop using _map_ and _reduce_ and appended 
+final obtained matrix in a list and printed the list accordingly in matrix format
+using the function _pr_ and  the map function. The _pr_ function prints the
+element of list with a newline if it is last element of a row else it is 
+printing that element with a space only.
+
+** PROBLEM 2
+   In this problem , I used _os_ library.  _os.walk_ module is used to go inside
+the given directory recursively.Variable _si_ is used to calculate the size of
+folder. _filename_ will give names of file and now using _os.join_ we concatenate
+its path with the path of root and use _getsize_ to calculate its size and opened
+it to read its contents and appended them to other file.Similarly is for dir.In 
+the last,we divided the sizes by 1024*1024 to get size in MB.a will give me the
+size of final file in which appending is done and si will give me the size of
+the directory. 
+
+** PROBLEM 3
+   In this problem , I appended the given _csv_ file to a list and then made 2
+new list out of it. _li2_ stores first column and _li1_ stores second column.Now using
+reduce and filter I calculated the sum of elements of li1 which are greater than 
+the given number and using reduce calculated the sum of all elements of li2 and
+printed them.
+
+** PROBLEM 4
+   In this problem, the function _checkpat_ will return all the patterns which contains
+the alphabets given by us in "word to be checked". _dic_ will be like  the dictionary.
+ _level1_ function return us the word after either deleting a
+letter from the given word or inserting a new letter or swapping positions of
+2 letters or replacing a letter with other letter.The function _yes(w)_ will 
+check whether the word is in dictionary or not. _level2(w)_ will make 2 level
+of change to the given word. and similarly _level3(w)_ will make 3 level change.
+Now finally in _check(w)_ will print the requisite message if the given word 
+is in dictionary else it will give 5 nearest word of the given word.
+ 
+* links
+[[file:../problem1/problem1.py][problem1]]
+#+begin_example
+INPUT
+[shubham.sangal@Shubham problem1]$ python problem1.py /home/shubham.sangal/python/t2
+input file t2 resembles:
+4 3
+14 9 3
+2 11 15
+0 12 17
+5 2 3
+3 2
+12 25
+9 10
+8 5
+OUTPUT
+273 455
+243 235
+244 205
+102 160
+INPUT
+3 3
+1 2 3
+4 5 6
+7 8 9
+3 2
+1 4
+2 7
+3 12 
+OUTPUT
+14 54
+32 123
+50 192
+#+end_example
+
+[[file:../problem2/problem2.py][problem2]]
+#+begin_example
+INPUT
+[shubham.sangal@Shubham problem2]$ python problem2.py /home/shubham.sangal/test/ /home/shubham.sangal/m.txt
+OUTPUT
+Size of /home/shubham.sangal/test/ : 0.013MB
+Size of /home/shubham.sangal/m.txt : 0.009MB
+#+end_example
+
+[[file:../problem3/problem3.py][problem3]]
+#+begin_example
+INPUT
+[shubham.sangal@Shubham problem3]$ python problem3.py sample.csv 60
+OUTPUT
+180
+420
+#+end_example
+
+[[file:../problem4/problem4.py][problem4]]
+#+begin_example
+INPUT
+[shubham.sangal@Shubham problem4]$ python problem4.py itws2
+OUTPUT
+The word is incorrectly spelt . The nearest options are :
+it's
+its
+Ian
+Ira's
+iota's
+#+end_example
